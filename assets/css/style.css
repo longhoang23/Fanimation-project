@@ -497,110 +497,105 @@
   margin-top: 25px;
   color: #bbb;
 }
-/* ========== SIDEBAR ADD-ON (append only) ========== */
+/* ========== SIDEBAR UPDATE ========== */
+
 #fanimation-sidebar {
-  position: fixed;            /* cố định khi cuộn, không ảnh hưởng layout gốc */
-  left: 20px;                 /* khoảng cách so với mép trái trang */
-  top: 120px;                 /* vị trí từ trên (điều chỉnh nếu header cao hơn) */
-  width: 260px;
-  max-width: 30vw;
+  position: fixed;
+  left: 20px;
+  top: 120px;
+  width: 270px;
+  height: calc(100vh - 140px);   /* chạy dọc toàn bộ trang, trừ phần header */
+  overflow-y: auto;              /* cuộn bên trong sidebar */
   background: #ffffff;
   border: 1px solid #e6e6e6;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-  padding: 18px;
-  border-radius: 8px;
-  z-index: 9999;              /* ưu tiên hiển thị trên nội dung */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  padding: 22px;
+  border-radius: 10px;
+  z-index: 9999;
   font-family: inherit;
-  color: #222;
+  font-size: 1rem;               /* đồng bộ tỷ lệ với toàn trang */
+  display: flex;
+  flex-direction: column;
+  gap: 28px;                     /* giãn đều các section */
 }
 
+/* Section title */
 #fanimation-sidebar .fsb-inner h4 {
-  margin: 0 0 10px;
-  font-size: 16px;
-  text-transform: none;
+  margin: 0 0 14px;
+  font-size: 1.15rem;            /* hơi to hơn, dễ nhìn */
+  font-weight: 600;
   color: #111;
 }
 
+/* Mỗi section */
 #fanimation-sidebar .fsb-section {
-  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
 }
 
+/* Price section */
 #fanimation-sidebar .fsb-price-range-wrap {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
 }
 
+/* Range input */
 #fanimation-sidebar input[type="range"] {
   width: 100%;
   -webkit-appearance: none;
-  height: 6px;
-  background: linear-gradient(90deg, #4951ff 0%, #ccc 0%);
+  height: 7px;
+  background: #f0f0f0;
   border-radius: 6px;
   outline: none;
 }
 
-/* Basic track/thumb styling for modern browsers */
 #fanimation-sidebar input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   background: #ffffff;
   border: 3px solid #4951ff;
   border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  cursor: pointer;
-}
-#fanimation-sidebar input[type="range"]::-moz-range-thumb {
-  width: 16px;
-  height: 16px;
-  background: #fff;
-  border: 3px solid #4951ff;
-  border-radius: 50%;
   cursor: pointer;
 }
 
+/* Price numbers */
 #fanimation-sidebar .fsb-price-values {
   display: flex;
   justify-content: space-between;
-  font-size: 13px;
-  color: #666;
+  font-size: 0.95rem;
+  color: #444;
 }
 
+/* Brands */
 #fanimation-sidebar .fsb-brands ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 #fanimation-sidebar .fsb-brands li {
-  margin-bottom: 8px;
-  font-size: 14px;
-}
-#fanimation-sidebar .fsb-brands input[type="checkbox"] {
-  margin-right: 8px;
-  transform: translateY(1px);
+  margin-bottom: 10px;
+  font-size: 1rem;
 }
 
+/* Top selling */
 #fanimation-sidebar .fsb-top-sell ol {
-  margin: 0;
-  padding-left: 18px;
-  font-size: 14px;
+  padding-left: 20px;
+  font-size: 1rem;
 }
+
 #fanimation-sidebar .fsb-top-sell a {
-  color: #333;
   text-decoration: none;
+  color: #333;
 }
 #fanimation-sidebar .fsb-top-sell a:hover {
   text-decoration: underline;
 }
 
-/* Responsive: ẩn sidebar trên màn hình nhỏ (< 900px) để tránh chồng lấn */
+/* responsive – ẩn sidebar trên màn bé */
 @media (max-width: 900px) {
   #fanimation-sidebar { display: none; }
 }
 
-/* Nếu cần, tăng khoảng cách so với phần nội dung chính cho các layout có container trung tâm
-   (chỉ là bổ trợ, không sửa layout gốc) */
-@media (min-width: 1200px) {
-  /* no-op: giữ an toàn */
-}
