@@ -458,5 +458,63 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+
+<!-- SIDEBAR ADD-ON START -->
+<aside id="fanimation-sidebar" aria-label="Sidebar filters">
+  <div class="fsb-inner">
+    <div class="fsb-section fsb-price">
+      <h4>Giá</h4>
+      <div class="fsb-price-range-wrap">
+        <input id="fsb-price-range" type="range" min="0" max="5000000" value="1000000" />
+        <div class="fsb-price-values">
+          <span id="fsb-price-min">0₫</span>
+          <span id="fsb-price-current">1.000.000₫</span>
+          <span id="fsb-price-max">5.000.000₫</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsb-section fsb-brands">
+      <h4>Hãng</h4>
+      <ul>
+        <li><label><input type="checkbox" name="brand" value="Panasonic"> Panasonic</label></li>
+        <li><label><input type="checkbox" name="brand" value="LG"> LG</label></li>
+        <li><label><input type="checkbox" name="brand" value="Senko"> Senko</label></li>
+        <li><label><input type="checkbox" name="brand" value="Vinawind"> Vinawind</label></li>
+        <li><label><input type="checkbox" name="brand" value="Asia"> Asia</label></li>
+        <li><label><input type="checkbox" name="brand" value="Sun House"> Sun House</label></li>
+      </ul>
+    </div>
+
+    <div class="fsb-section fsb-top-sell">
+      <h4>Top Bán Chạy</h4>
+      <ol>
+        <li><a href="#">Quạt trần Panasonic 4 cánh</a></li>
+        <li><a href="#">Quạt trần Panasonic 4 cánh</a></li>
+        <li><a href="#">Quạt trần Panasonic 4 cánh</a></li>
+      </ol>
+    </div>
+  </div>
+</aside>
+<!-- SIDEBAR ADD-ON END -->
+
+<!-- SIDEBAR SCRIPT (append also before </body>) -->
+<script>
+  (function(){
+    // Price range display (purely local; không thay đổi nội dung khác)
+    var range = document.getElementById('fsb-price-range');
+    var cur = document.getElementById('fsb-price-current');
+    function fmt(v){
+      return v.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + '₫';
+    }
+    if(range && cur){
+      cur.textContent = fmt(range.value);
+      range.addEventListener('input', function(){
+        cur.textContent = fmt(this.value);
+      });
+    }
+  })();
+</script>
+
   </body>
 </html>

@@ -497,3 +497,110 @@
   margin-top: 25px;
   color: #bbb;
 }
+/* ========== SIDEBAR ADD-ON (append only) ========== */
+#fanimation-sidebar {
+  position: fixed;            /* cố định khi cuộn, không ảnh hưởng layout gốc */
+  left: 20px;                 /* khoảng cách so với mép trái trang */
+  top: 120px;                 /* vị trí từ trên (điều chỉnh nếu header cao hơn) */
+  width: 260px;
+  max-width: 30vw;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  padding: 18px;
+  border-radius: 8px;
+  z-index: 9999;              /* ưu tiên hiển thị trên nội dung */
+  font-family: inherit;
+  color: #222;
+}
+
+#fanimation-sidebar .fsb-inner h4 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  text-transform: none;
+  color: #111;
+}
+
+#fanimation-sidebar .fsb-section {
+  margin-bottom: 18px;
+}
+
+#fanimation-sidebar .fsb-price-range-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#fanimation-sidebar input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 6px;
+  background: linear-gradient(90deg, #4951ff 0%, #ccc 0%);
+  border-radius: 6px;
+  outline: none;
+}
+
+/* Basic track/thumb styling for modern browsers */
+#fanimation-sidebar input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 3px solid #4951ff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+#fanimation-sidebar input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: 3px solid #4951ff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#fanimation-sidebar .fsb-price-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #666;
+}
+
+#fanimation-sidebar .fsb-brands ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#fanimation-sidebar .fsb-brands li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+#fanimation-sidebar .fsb-brands input[type="checkbox"] {
+  margin-right: 8px;
+  transform: translateY(1px);
+}
+
+#fanimation-sidebar .fsb-top-sell ol {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+}
+#fanimation-sidebar .fsb-top-sell a {
+  color: #333;
+  text-decoration: none;
+}
+#fanimation-sidebar .fsb-top-sell a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: ẩn sidebar trên màn hình nhỏ (< 900px) để tránh chồng lấn */
+@media (max-width: 900px) {
+  #fanimation-sidebar { display: none; }
+}
+
+/* Nếu cần, tăng khoảng cách so với phần nội dung chính cho các layout có container trung tâm
+   (chỉ là bổ trợ, không sửa layout gốc) */
+@media (min-width: 1200px) {
+  /* no-op: giữ an toàn */
+}
