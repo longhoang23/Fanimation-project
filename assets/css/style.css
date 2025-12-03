@@ -504,8 +504,8 @@
   left: 20px;
   top: 120px;
   width: 270px;
-  height: calc(100vh - 140px);   /* chạy dọc toàn bộ trang, trừ phần header */
-  overflow-y: auto;              /* cuộn bên trong sidebar */
+  height: calc(100vh - 140px);   
+  overflow-y: auto;              
   background: #ffffff;
   border: 1px solid #e6e6e6;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
@@ -513,34 +513,30 @@
   border-radius: 10px;
   z-index: 9999;
   font-family: inherit;
-  font-size: 1rem;               /* đồng bộ tỷ lệ với toàn trang */
+  font-size: 1rem;               
   display: flex;
   flex-direction: column;
-  gap: 28px;                     /* giãn đều các section */
+  gap: 28px;                     
 }
 
-/* Section title */
 #fanimation-sidebar .fsb-inner h4 {
   margin: 0 0 14px;
-  font-size: 1.15rem;            /* hơi to hơn, dễ nhìn */
+  font-size: 1.15rem;            
   font-weight: 600;
   color: #111;
 }
 
-/* Mỗi section */
 #fanimation-sidebar .fsb-section {
   padding-bottom: 12px;
   border-bottom: 1px solid #eee;
 }
 
-/* Price section */
 #fanimation-sidebar .fsb-price-range-wrap {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-/* Range input */
 #fanimation-sidebar input[type="range"] {
   width: 100%;
   -webkit-appearance: none;
@@ -560,7 +556,6 @@
   cursor: pointer;
 }
 
-/* Price numbers */
 #fanimation-sidebar .fsb-price-values {
   display: flex;
   justify-content: space-between;
@@ -568,7 +563,6 @@
   color: #444;
 }
 
-/* Brands */
 #fanimation-sidebar .fsb-brands ul {
   list-style: none;
   padding: 0;
@@ -580,7 +574,6 @@
   font-size: 1rem;
 }
 
-/* Top selling */
 #fanimation-sidebar .fsb-top-sell ol {
   padding-left: 20px;
   font-size: 1rem;
@@ -594,7 +587,6 @@
   text-decoration: underline;
 }
 
-/* responsive – ẩn sidebar trên màn bé */
 @media (max-width: 900px) {
   #fanimation-sidebar { display: none; }
 }
