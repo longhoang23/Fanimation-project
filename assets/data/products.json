@@ -1,0 +1,89 @@
+{
+  "categories": [
+    {
+      "id": "quat-tran",
+      "name": "Quạt trần",
+      "products": [
+        {
+          "id": 1,
+          "name": "Quạt trần Panasonic 4 cánh",
+          "price": 2300000,
+          "old_price": 2990000,
+          "sale": "-20%",
+          "image": "assets/images/quat-tran-4-canh-panasonic.jpg",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "name": "Quạt trần Mitsubishi CY56",
+          "price": 2800000,
+          "old_price": 3500000,
+          "sale": "-15%",
+          "image": "assets/images/quat-tran-thin-40.jpg",
+          "rating": 4
+        },
+        {
+          "id": 3,
+          "name": "Quạt trần KDK 5 cánh M60",
+          "price": 3200000,
+          "old_price": 4200000,
+          "sale": "-25%",
+          "image": "assets/images/quat-tran-4-canh-panasonic.jpg",
+          "rating": 5
+        },
+        {
+          "id": 4,
+          "name": "Quạt trần KDK 5 cánh M60",
+          "price": 3200000,
+          "old_price": 4200000,
+          "sale": "-25%",
+          "image": "assets/images/quat-tran-4-canh-panasonic.jpg",
+          "rating": 5
+        }
+      ]
+    },
+
+    {
+      "id": "quat-dung",
+      "name": "Quạt đứng",
+      "products": [
+        {
+          "id": 5,
+          "name": "Quạt đứng Panasonic F308",
+          "price": 1600000,
+          "old_price": 1990000,
+          "sale": "-20%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 5
+        },
+        {
+          "id": 6,
+          "name": "Quạt đứng Toshiba V50",
+          "price": 1400000,
+          "old_price": 1750000,
+          "sale": "-15%",
+          "image": "assets/images/Quat-dung-Fugio.jpg",
+          "rating": 4
+        },
+        {
+          "id": 7,
+          "name": "Quạt đứng LG PowerFan",
+          "price": 1800000,
+          "old_price": 2100000,
+          "sale": "-10%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 5
+        },
+        {
+          "id": 8,
+          "name": "Quạt đứng LG PowerFan",
+          "price": 1800000,
+          "old_price": 2100000,
+          "sale": "-10%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 5
+        }
+      ]
+    }
+  ]
+}

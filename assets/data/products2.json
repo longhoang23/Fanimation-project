@@ -1,0 +1,224 @@
+{
+  "brands": [
+    { "id": 1, "name": "Panasonic" },
+    { "id": 2, "name": "Mitsubishi" },
+    { "id": 3, "name": "KDK" },
+    { "id": 4, "name": "Fanimation" },
+    { "id": 5, "name": "Royal" },
+    { "id": 6, "name": "EcoFan" },
+    { "id": 7, "name": "Toshiba" },
+    { "id": 8, "name": "LG" },
+    { "id": 9, "name": "Senko" },
+    { "id": 10, "name": "Sharp" }
+  ],
+
+  "categories": [
+    {
+      "id": "quat-tran",
+      "name": "Quạt trần",
+      "products": [
+        {
+          "id": 1,
+          "name": "Quạt trần Panasonic 4 cánh",
+          "brand_id": 1,
+          "price": 2300000,
+          "old_price": 2990000,
+          "sale": "-20%",
+          "image": "assets/images/quat-tran-4-canh-panasonic.jpg",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "name": "Quạt trần Mitsubishi CY56",
+          "brand_id": 2,
+          "price": 2800000,
+          "old_price": 3500000,
+          "sale": "-15%",
+          "image": "assets/images/quat-tran-thin-40.jpg",
+          "rating": 4
+        },
+        {
+          "id": 3,
+          "name": "Quạt trần KDK 5 cánh M60",
+          "brand_id": 3,
+          "price": 3200000,
+          "old_price": 4200000,
+          "sale": "-25%",
+          "image": "assets/images/quat-tran-4-canh-panasonic.jpg",
+          "rating": 5
+        },
+        {
+          "id": 10,
+          "name": "Quạt trần Fanimation BreezeLux",
+          "brand_id": 4,
+          "price": 3500000,
+          "old_price": 3990000,
+          "sale": "-10%",
+          "image": "assets/images/quat-tran-4-canh-panasonic.jpg",
+          "rating": 4
+        },
+        {
+          "id": 11,
+          "name": "Quạt trần Royal Living 5 cánh",
+          "brand_id": 5,
+          "price": 4200000,
+          "old_price": 5200000,
+          "sale": "-18%",
+          "image": "assets/images/quat-tran-4-canh-panasonic.jpg",
+          "rating": 5
+        },
+        {
+          "id": 12,
+          "name": "Quạt trần EcoFan UltraAir",
+          "brand_id": 6,
+          "price": 3900000,
+          "old_price": 4500000,
+          "sale": "-13%",
+          "image": "assets/images/quat-tran-4-canh-panasonic.jpg",
+          "rating": 4
+        }
+      ]
+    },
+
+    {
+      "id": "quat-dung",
+      "name": "Quạt đứng",
+      "products": [
+        {
+          "id": 4,
+          "name": "Quạt đứng Panasonic F308",
+          "brand_id": 1,
+          "price": 1600000,
+          "old_price": 1990000,
+          "sale": "-20%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 5
+        },
+        {
+          "id": 5,
+          "name": "Quạt đứng Toshiba V50",
+          "brand_id": 7,
+          "price": 1400000,
+          "old_price": 1750000,
+          "sale": "-15%",
+          "image": "assets/images/Quat-dung-Fugio.jpg",
+          "rating": 4
+        },
+        {
+          "id": 6,
+          "name": "Quạt đứng LG PowerFan",
+          "brand_id": 8,
+          "price": 1800000,
+          "old_price": 2100000,
+          "sale": "-10%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 5
+        },
+        {
+          "id": 13,
+          "name": "Quạt đứng Fanimation TurboX",
+          "brand_id": 4,
+          "price": 2000000,
+          "old_price": 2400000,
+          "sale": "-17%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 4
+        },
+        {
+          "id": 14,
+          "name": "Quạt đứng Mitsubishi HighCool",
+          "brand_id": 2,
+          "price": 2200000,
+          "old_price": 2600000,
+          "sale": "-15%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 5
+        },
+        {
+          "id": 15,
+          "name": "Quạt đứng Sharp AirBoost",
+          "brand_id": 10,
+          "price": 1350000,
+          "old_price": 1590000,
+          "sale": "-12%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 4
+        }
+      ]
+    },
+
+    {
+      "id": "quat-ban",
+      "name": "Quạt bàn",
+      "products": [
+        {
+          "id": 16,
+          "name": "Quạt bàn Toshiba MiniDesk",
+          "brand_id": 7,
+          "price": 650000,
+          "old_price": 850000,
+          "sale": "-23%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 5
+        },
+        {
+          "id": 17,
+          "name": "Quạt bàn Panasonic DeskPro",
+          "brand_id": 1,
+          "price": 720000,
+          "old_price": 950000,
+          "sale": "-20%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 4
+        },
+        {
+          "id": 18,
+          "name": "Quạt bàn LG CoolMini",
+          "brand_id": 8,
+          "price": 550000,
+          "old_price": 750000,
+          "sale": "-15%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 4
+        }
+      ]
+    },
+
+    {
+      "id": "quat-hop",
+      "name": "Quạt hộp",
+      "products": [
+        {
+          "id": 19,
+          "name": "Quạt hộp Senko S200",
+          "brand_id": 9,
+          "price": 380000,
+          "old_price": 450000,
+          "sale": "-15%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 4
+        },
+        {
+          "id": 20,
+          "name": "Quạt hộp Panasonic BoxCool",
+          "brand_id": 1,
+          "price": 450000,
+          "old_price": 520000,
+          "sale": "-12%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 5
+        },
+        {
+          "id": 21,
+          "name": "Quạt hộp Toshiba MiniWind",
+          "brand_id": 7,
+          "price": 390000,
+          "old_price": 470000,
+          "sale": "-17%",
+          "image": "assets/images/Quat-dien-panasonic.png",
+          "rating": 4
+        }
+      ]
+    }
+  ]
+}

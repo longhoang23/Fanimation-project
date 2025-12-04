@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán | Fanimation</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/pages/header.css" />
+    <link rel="stylesheet" href="assets/css/pages/footer.css" />
+    <link rel="stylesheet" href="assets/css/pages/checkout.css" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <div class="checkout-container">
+      <div class="checkout-left">
+        <h2 class="checkout-title">Thông tin thanh toán</h2>
+
+        <div class="form-group">
+          <label>Họ và tên</label>
+          <input type="text" placeholder="Nhập họ và tên" required />
+        </div>
+
+        <div class="form-group">
+          <label>Số điện thoại</label>
+          <input type="text" placeholder="Nhập số điện thoại" required />
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="Nhập email" />
+        </div>
+
+        <div class="form-group">
+          <label>Địa chỉ nhận hàng</label>
+          <input type="text" placeholder="Số nhà, đường, phường/xã..." />
+        </div>
+
+        <div class="form-group">
+          <label>Ghi chú</label>
+          <textarea
+            rows="4"
+            placeholder="Ghi chú thêm (không bắt buộc)"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Phương thức thanh toán</label>
+          <select>
+            <option>Thanh toán khi nhận hàng (COD)</option>
+            <option>Chuyển khoản ngân hàng</option>
+            <option>Thanh toán qua Momo</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="checkout-right">
+        <h2 class="checkout-title">Đơn hàng của bạn</h2>
+
+        <div class="order-summary">
+          <div class="order-item">
+            <div class="order-item-info">
+              <img src="assets/images/quat-tran-4-canh-panasonic.jpg" />
+              <span>Quạt trần Panasonic 4 cánh (x1)</span>
+            </div>
+            <span>2.300.000đ</span>
+          </div>
+
+          <div class="order-item">
+            <div class="order-item-info">
+              <img src="assets/images/Quat-dien-panasonic.png" />
+              <span>Quạt đứng Panasonic (x1)</span>
+            </div>
+            <span>1.600.000đ</span>
+          </div>
+        </div>
+
+        <div class="order-total">Tổng cộng: 3.900.000đ</div>
+
+        <button class="btn-checkout-submit">Hoàn tất đơn hàng</button>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages/checkout.js"></script>
+  </body>
+</html>

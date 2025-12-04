@@ -27,217 +27,42 @@
   align-items: center;
 }
 
-/* ---------- BODY ---------- */
-
-#nav {
-  display: flex;
-  gap: 30px;
-  margin-left: 40px;
-  margin-right: auto;
-  list-style: none;
-  font-size: 20px;
+.category-section {
+  padding: 50px 0;
 }
 
-#nav .nav-item a {
-  position: relative;
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-}
-#nav .nav-item a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background: rgb(73, 73, 255);
-  transition: width 0.3s ease;
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
 }
 
-#nav .nav-item a:hover {
-  color: rgb(73, 73, 255);
-}
-
-#nav .nav-item a:hover::after {
-  width: 100%;
-}
-
-.search-menu,
-.car-header {
-  margin-left: 20px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.account-menu {
-  position: relative;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-.account-dropdown {
-  position: absolute;
-  top: 35px;
-  right: 0;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  width: 120px;
-  padding: 10px 0;
-  list-style: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: all 0.25s ease;
-}
-
-.account-dropdown li {
-  padding: 8px 15px;
-}
-
-.account-dropdown li a {
-  color: #333;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.account-dropdown li:hover a {
-  color: rgb(73, 73, 255);
-}
-
-.account-menu:hover .account-dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.top-cart-content {
-  position: absolute;
-  top: 35px;
-  right: 0;
-  width: 260px;
-  background: white;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  padding: 15px 10px;
-  z-index: 100;
-
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: all 0.25s ease;
-}
-
-.mini-cart {
-  position: relative;
-  cursor: pointer;
-}
-
-.cart-icon {
-  position: relative;
-  display: inline-block;
-  font-size: 22px;
-}
-
-.cart-count {
-  position: absolute;
-  top: -6px;
-  right: -10px;
-  background: #007bff;
-  color: white;
-  font-size: 12px;
-  padding: 3px 6px;
-  border-radius: 50%;
-}
-
-.top-cart-content {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  width: 300px;
-  background: white;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  padding: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  z-index: 100;
-
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: all 0.25s ease;
-}
-
-.mini-cart:hover .top-cart-content {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.cart-item {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 12px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #f1f1f1;
-}
-
-.cart-item:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.cart-thumb {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 4px;
-  border: 1px solid #eee;
-}
-
-.cart-info {
-  flex-grow: 1;
-}
-
-.product-name {
-  font-size: 14px;
-  font-weight: 500;
-  color: #333;
-  margin-bottom: 4px;
-}
-
-.price {
-  color: #007bff;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.top-subtotal {
-  font-size: 15px;
-  margin: 12px 0;
-  font-weight: 600;
-}
-
-.subtotal-price {
-  color: #ff4d4f;
-  font-weight: bold;
-}
-
-.btn-checkout {
+.category-card {
   display: block;
-  background: #007bff;
-  color: white;
   text-align: center;
-  padding: 10px 0;
-  border-radius: 4px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  transition: 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .section-about {
@@ -378,22 +203,29 @@
 }
 
 .action-btn {
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   border: none;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #333;
   cursor: pointer;
-  transition: 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: 0.25s;
+  text-decoration: none; /* để thẻ <a> không có underline */
 }
 
 .action-btn:hover {
-  background: #f5f5f5;
+  transform: translateY(-2px);
 }
 
+/* Icon bên trong */
 .action-btn i {
-  font-size: 16px;
+  pointer-events: none; /* đảm bảo click vào icon cũng hoạt động */
 }
 
 .product-category {
@@ -431,69 +263,41 @@
   font-size: 14px;
 }
 
-/* ---------- FOOTER ---------- */
-.site-footer {
-  background: #111;
-  color: #fff;
-  padding: 50px 0 20px;
+.partner-section {
+  padding: 50px 0;
+  background: #f8f8f8;
   margin-top: 40px;
-  font-size: 15px;
 }
 
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+.partner-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
-.footer-title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  text-transform: uppercase;
+.partner-track {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  animation: slideLinear 18s linear infinite;
 }
 
-.footer-text {
-  color: #ccc;
-  line-height: 1.6;
+.partner-item {
+  min-width: 150px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-links {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  margin-bottom: 10px;
-  color: #ccc;
-}
-
-.footer-links a {
-  color: #ccc;
-  text-decoration: none;
+.partner-item img {
+  max-width: 70%;
+  max-height: 70%;
+  opacity: 0.85;
   transition: 0.3s;
 }
 
-.footer-links a:hover {
-  color: #fff;
-}
-
-.footer-social a {
-  display: inline-block;
-  margin-right: 12px;
-  font-size: 18px;
-  color: #fff;
-  transition: 0.3s;
-}
-
-.footer-social a:hover {
-  color: #f39c12;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid #333;
-  margin-top: 25px;
-  color: #bbb;
+.partner-item img:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
