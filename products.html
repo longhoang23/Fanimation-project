@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/pages/header.css" />
+    <link rel="stylesheet" href="assets/css/pages/footer.css" />
+    <link rel="stylesheet" href="assets/css/pages/products.css" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <div class="container-product">
+      <div class="sidebar">
+        <div class="filter-box">
+          <h3>Lọc theo giá</h3>
+
+          <div class="price-range">
+            <input
+              type="range"
+              id="priceRange"
+              min="0"
+              max="4000000"
+              value="4000000"
+            />
+          </div>
+
+          <div class="price-display">
+            <span>Từ: <strong>0</strong></span>
+            <span>Đến: <strong id="maxLabel">48.000.000đ</strong></span>
+          </div>
+        </div>
+
+        <div class="filter-box">
+          <h3>Hãng sản xuất</h3>
+
+          <label
+            ><input type="checkbox" class="brandCheck" value="Panasonic" />
+            Panasonic</label
+          ><br />
+          <label
+            ><input type="checkbox" class="brandCheck" value="LG" /> LG</label
+          ><br />
+          <label
+            ><input type="checkbox" class="brandCheck" value="Ecofan" />
+            Ecofan</label
+          ><br />
+          <label
+            ><input type="checkbox" class="brandCheck" value="Mitsubishi" />
+            Mitsubishi</label
+          ><br />
+        </div>
+      </div>
+
+      <div class="product-area">
+        <div id="productList" class="product-grid"></div>
+
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="assets/js/pages/products.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages/cart.js"></script>
+  </body>
+</html>
